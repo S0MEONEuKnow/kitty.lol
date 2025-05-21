@@ -8,6 +8,7 @@ local mouse          = localPlayer:GetMouse()
 
 local menu           = game:GetObjects("rbxassetid://12702460854")[1]
 menu.bg.Position     = UDim2.new(0.5,-menu.bg.Size.X.Offset/2,0.5,-menu.bg.Size.Y.Offset/2)
+menu.bg.Size = UDim2.new(0,300,0,200)
 menu.Parent          = game:GetService("CoreGui").RobloxGui
 menu.bg.pre.Text = 'kitty<font color="#c375ae">.lol</font> - meow!'
 local library = {cheatname = "";ext = "";gamename = "";colorpicking = false;tabbuttons = {};tabs = {};options = {};flags = {};scrolling = false;notifyText = Drawing.new("Text");playing = false;multiZindex = 200;toInvis = {};libColor = Color3.fromRGB(240, 142, 214);disabledcolor = Color3.fromRGB(233, 0, 0);blacklisted = {Enum.KeyCode.W,Enum.KeyCode.A,Enum.KeyCode.S,Enum.KeyCode.D,Enum.UserInputType.MouseMovement}}
