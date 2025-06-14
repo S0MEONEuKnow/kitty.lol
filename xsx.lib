@@ -692,8 +692,8 @@ function library:Introduction()
     local bar = Instance.new("Frame")
     local barCorner = Instance.new("UICorner")
     local barLayout = Instance.new("UIListLayout")
-    local xsxLogo = Instance.new("ImageLabel")
-    local hashLogo = Instance.new("ImageLabel")
+    local xsxLogo = Instance.new("Label")
+    local hashLogo = Instance.new("Label")
     local xsx = Instance.new("TextLabel")
     local text = Instance.new("TextLabel")
     local pageLayout = Instance.new("UIListLayout")
@@ -758,7 +758,7 @@ function library:Introduction()
     xsxLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
     xsxLogo.Size = UDim2.new(0, 448, 0, 150)
     xsxLogo.Visible = true
-    xsxLogo.Image = "http://www.roblox.com/asset/?id=92800537341643"
+    xsxLogo. = "http://www.roblox.com/asset/?id=81833925337499"
     xsxLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     xsxLogo.ImageTransparency = 1
     
@@ -770,7 +770,7 @@ function library:Introduction()
     hashLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
     hashLogo.Size = UDim2.new(0, 150, 0, 150)
     hashLogo.Visible = true
-    hashLogo.Image = "http://www.roblox.com/asset/?id=92800537341643"
+    hashLogo.Image = "http://www.roblox.com/asset/?id=81833925337499"
     hashLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     hashLogo.ImageTransparency = 1
     
