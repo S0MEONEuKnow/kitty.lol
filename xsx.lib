@@ -756,10 +756,9 @@ function library:Introduction()
     xsxLogo.BackgroundColor3 = Color3.fromRGB(255, 255, 255)
     xsxLogo.BackgroundTransparency = 1.000
     xsxLogo.Position = UDim2.new(0.5, 0, 0.5, 0)
-    xsxLogo.Size = UDim2.new(0, 448, 0, 150)
+    xsxLogo.Size = UDim2.new(0, 150, 0, 150)
     xsxLogo.Visible = true
     xsxLogo.Image = "http://www.roblox.com/asset/?id=81833925337499"
-    xsxLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     xsxLogo.ImageTransparency = 1
     
     hashLogo.Name = "hashLogo"
@@ -771,7 +770,6 @@ function library:Introduction()
     hashLogo.Size = UDim2.new(0, 150, 0, 150)
     hashLogo.Visible = true
     hashLogo.Image = "http://www.roblox.com/asset/?id=81833925337499"
-    hashLogo.ImageColor3 = Color3.fromRGB(159, 115, 255)
     hashLogo.ImageTransparency = 1
     
     xsx.Name = "xsx"
@@ -803,15 +801,6 @@ function library:Introduction()
     pageLayout.HorizontalAlignment = Enum.HorizontalAlignment.Center
     pageLayout.SortOrder = Enum.SortOrder.LayoutOrder
     pageLayout.VerticalAlignment = Enum.VerticalAlignment.Center
-
-    CreateTween("xsxRotation", 0)
-    local MinusAmount = -16
-    coroutine.wrap(function()
-        while wait() do
-            MinusAmount = MinusAmount + 0.4
-            TweenService:Create(xsxLogo, TweenTable["xsxRotation"], {Rotation = xsxLogo.Rotation - MinusAmount}):Play()
-        end
-    end)()
 
     TweenService:Create(edge, TweenTable["introduction"], {BackgroundTransparency = 0}):Play()
     TweenService:Create(background, TweenTable["introduction"], {BackgroundTransparency = 0}):Play()
